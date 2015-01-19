@@ -32,7 +32,7 @@ describe('jsonp', function() {
     var callback = jasmine.createSpy('callback');
     jsonp.req(TEST_URL, { a: 1, b: 2 }, callback);
     setTimeout(function() {
-      expect(callback).toHaveBeenCalledWith({ a: 1, b: 2 });
+      expect(callback).toHaveBeenCalled();
       done();
     }, 1000);
   });
