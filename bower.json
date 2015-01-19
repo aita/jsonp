@@ -1,0 +1,20 @@
+{
+  "name": "jsonp",
+  "main": "jsonp.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/aita/jsonp",
+  "authors": [
+    "Ryo Aita <ryoait@gmail.com>"
+  ],
+  "keywords": [
+    "jsonp"
+  ],
+  "license": "ISC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
