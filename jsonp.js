@@ -75,7 +75,7 @@
       options.url += query ? '&' : '?' +
         encodeURIComponent(options.method) + '=' + callbackName;
     }
-    jsonp.loadScript(options.url, options.onload, options.onerror);
+    jsonp.loadScript(options.url, options.load, options.error);
   };
 
   jsonp.loadScript = function(url, onload, onerror) {
