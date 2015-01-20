@@ -58,10 +58,7 @@
     }
     var callbackName;
     if (options.callback) {
-      if(!Date.now){
-        Date.now = function() { return new Date().getTime(); };
-      }
-      var timestamp = Date.now();
+      var timestamp = (new Date()).getTime();
       callbackName = 'jsonp' + Math.round(timestamp+Math.random()*1000001);
       window[callbackName] = function(json){
         options.callback(json);
