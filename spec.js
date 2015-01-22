@@ -52,7 +52,7 @@ describe('jsonp', function() {
   it('404ステータス時にonerrorが呼ばれること', function(done) {
     var callback = jasmine.createSpy('callback');
     jsonp.req({
-      url: 'http://github.com/404',
+      url: 'http://www.example.com/404',
       error: callback
     });
     setTimeout(function() {
