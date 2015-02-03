@@ -50,7 +50,9 @@
       for (var i = 0; i < keys.length; i++) {
         var key = keys[i];
         var value = options.data[key];
-        query += encodeURIComponent(key) + '=' + encodeURIComponent(value);
+        query += encodeURIComponent(key) + '=';
+        if (value !== null && typeof value !== 'undefined')
+          query += encodeURIComponent(value);
         if (i !== keys.length-1) {
           query += '&';
         }
