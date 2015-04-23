@@ -1,7 +1,7 @@
 {
-  "name": "jsonp",
+  "name": "simple-jsonp",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple jsonp library.",
   "main": "jsonp.js",
   "dependencies": {},
   "devDependencies": {
